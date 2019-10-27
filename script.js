@@ -10,6 +10,35 @@ const form = document.querySelector('form');
 
 editGameButton.addEventListener("click", function(e) {
     e.preventDefault;
+
+    let addGameName = document.getElementById('editGameName').value;
+    let addGamePrice = document.getElementById('editGamePrice').value;
+    let addGamePublisher = document.getElementById('editGamePublisher').value;
+
+    axios.get('http://localhost:3000/editGame/?gameName=' + addGameName + '&gamePrice=' + addGamePrice + '&gamePublisher')
+    .then( response => {
+        for(let game of response.data.rows) {
+            if (game.name === addGameName)  {
+                console.log('oo');
+                document.querySelector('.gameName').innerHTML = game.name;
+                document.querySelector('.gamePrice').innerHTML = addGamePrice;
+                document.querySelector('.gamePublisher').innerHTML = addGamePublisher;
+
+            }
+        }
+    document.querySelector('.gameName').innerHTML = addGameName;
+    document.querySelector('.gamePrice').innerHTML = addGamePrice;
+    document.querySelector('.gamePublisher').innerHTML = addGamePublisher;
+    console.log(addGameName);
+
+    })
+    
+    .catch(function(error) {
+        console.log('y');
+        console.log(error);
+    })
+    
+    
 });
 addGameButton.addEventListener("click", function(e) {
     e.preventDefault();
@@ -34,8 +63,6 @@ addGameButton.addEventListener("click", function(e) {
     document.querySelector('.gamePublisher').innerHTML = addGamePublisher;
     console.log(addGameName);
 
-    //addGamePriceInput = response.data.rows[0].name
-    //addGamePublisherInput = response.data.rows[0].name
     })
     
     .catch(function(error) {

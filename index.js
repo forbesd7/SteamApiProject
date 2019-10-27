@@ -9,6 +9,8 @@ app.use(cors());
 
 app.get('/gameNames', db.getGameNames)
 app.get('/addGame', db.addGame)
+app.get('/editGame', db.editGame)
+
 
 
 
