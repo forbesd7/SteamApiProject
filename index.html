@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Steam API</title>
+        <link rel = "stylesheet" type="text/css" href="style.css">
+      </head>
+
+      <body>
+          <div id="title"> 
+              <img id="pic" src="steamlogo.png">
+          </div>
+
+          <div id="title-text"> <div id="title-inner-text">Steam Api </div></div>
+
+        <form>
+            <div class="form-item">
+                <label for="addGame">Get Random Game:</label>
+            </div>
+            <button type="submit" id="getGameButton">SUBMIT</button>
+          
+            <div class="form-item">
+                <label for="addGame">Add a Game: </label>
+                <input type="text" placeholder="Enter your game name" id="addGameName" name="city">
+                <input type="text" placeholder="Enter game price" id="addGamePrice" name="city">
+                <input type="text" placeholder="Enter game publisher" id="addGamePublisher" name="city">
+
+              </div>
+              <button type="submit" id="addGameButton">SUBMIT</button>
+
+              <div class="form-item">
+                <label for="city">Edit a Game: </label>
+                <input type="text" placeholder="Enter which game" id="city" name="city">
+              </div>
+              <button type="submit" id="editGameButton">SUBMIT</button>
+
+              <div class="form-item">
+                <label for="city">Delete a game: </label>
+                <input type="text" placeholder="Enter game name" id="city" name="city">
+              </div>
+              <button type="submit" id="deleteGameButton">SUBMIT</button>
+
+          </form>
+          <div class="error-message"></div>
+        <div class="game-info">
+            <h1 class="gameName"></h1>
+            <h4 class="gamePrice"></h4>
+            <h4 class="gamePublisher"></h4>
+          </div>
+          
+          <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+          <script src="script.js"></script>
+        </body>
+  </html>

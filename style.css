@@ -1,0 +1,50 @@
+body {
+    background: black;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #title {
+    display: flex;
+    text-align:center;
+    justify-content: center;
+  }
+
+  #title-text {
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    opacity: 0.68;
+    font-size:30px;
+  }
+  
+  form {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 4%;
+  }
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:4%;
+  }
+  label, input, button {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  label {
+    padding-left: 0px;
+  }
+  .game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .error-message {
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+  }
