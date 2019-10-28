@@ -6,14 +6,14 @@ This is an API that allows you to access data about all the games (June 2019) on
 
 ***(Need node to be installed)***
 
-Set up:
+# Set up:
 
 ```yarn add ```
 (Add the dependencies)
 
 ```node index.js``` (Get the server running)
 
-
+# Instructions 
 Access the main page through the index html page. 
 
 Using the API is quite easy, click the button the left to a random game's info.
