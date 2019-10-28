@@ -8,9 +8,10 @@ This is an API that allows you to access data about all the games (June 2019) on
 
 Set up:
 
-yarn add (Add the dependencies)
+```yarn add ```
+(Add the dependencies)
 
-node index.js (Get the server running)
+```node index.js (Get the server running)```
 
 
 Access the main page through the index html page. 
